@@ -1,8 +1,7 @@
+import { Inter } from "next/font/google";
+import Link from "next/link";
 
-import { Inter } from 'next/font/google'
-
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -109,7 +108,18 @@ export default function Home() {
         </div>
       </main> */}
 
-      <h1>Next js app</h1>
+      <h1>Home Page</h1>
+      <ul>
+        <li>
+          <Link href="/about">About</Link>
+        </li>
+        <li>
+          <Link href="/portfolio">Portfolio</Link>
+        </li>
+        <li>
+          <Link href="/clients">clients</Link>
+        </li>
+      </ul>
     </>
-  )
+  );
 }
